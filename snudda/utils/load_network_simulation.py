@@ -44,7 +44,7 @@ class SnuddaLoadNetworkSimulation:
         print(f"Loading {network_simulation_output_file}")
         self.network_simulation_file = h5py.File(network_simulation_output_file, "r")
 
-        self.depolarisation_block = self.check_depolarisation_block(verbose=self.verbose)
+        # self.depolarisation_block = self.check_depolarisation_block(verbose=self.verbose)
 
     def close(self):
         if self.network_simulation_file:
